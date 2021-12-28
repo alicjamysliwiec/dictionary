@@ -1,0 +1,17 @@
+h1{
+  display: block;
+  margin: 86px 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.title{
+  display: inline;
+}
