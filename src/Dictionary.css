@@ -12,7 +12,7 @@ input {
 }
 
 .input-search:focus::placeholder {
-  color: black;
+  color: #aa8a8a;
 }
 
 .input-search:focus {
