@@ -40,16 +40,11 @@
 }
 
 footer{
-  margin:0 auto;
+  margin:50px auto;
   opacity: 0.6;
   width: 50%;
   border-top: 1px solid #ad8c8c;
   border-bottom: 1px solid #ad8c8c;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 20px;
   padding: 5px;
   color: #ad8c8c
   ;
