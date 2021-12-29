@@ -1,0 +1,9 @@
+.meaning {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #757575;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: rgba(19, 18, 18, 0.171);
+  width: 85%;
+}

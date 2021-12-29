@@ -8,14 +8,16 @@ input {
   border: none;
   border-bottom: 2px solid #aa8a8a;
   transition: 150ms all ease;
+  color: #757575;
 }
 
-.input-search:focus::placeholder{
-    color: black;
+.input-search:focus::placeholder {
+  color: black;
 }
 
 .input-search:focus {
-    background-color: #aa8a8a;
+  background-color: #aa8a8a;
+  color: black;
 }
 
 .input-submit {
