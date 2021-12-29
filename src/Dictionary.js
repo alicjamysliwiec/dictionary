@@ -3,7 +3,7 @@ import "./Dictionary.css";
 import Results from "./Results.js";
 import axios from "axios";
 
-export default function Dictionary () {
+export default function Dictionary() {
   const [searchWord, setSearchWord] = useState("");
   const [results, setResults] = useState({});
   const [dataReady, setDataReady] = useState(false);
@@ -38,13 +38,16 @@ export default function Dictionary () {
     <div className="dictionary">
       <form onSubmit={onSubmit}>
         <input
+        className="input-search"
           type="search"
           autoFocus={true}
           value={searchWord}
+          placeholder="What are you looking for?"
           onChange={(event) => {
             setSearchWord(event.target.value);
           }}
         />
+        <input className="input-submit" type="submit" value="Check it out!" />
       </form>
       {error && (
         <div className="error">

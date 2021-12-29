@@ -1,4 +1,39 @@
-.error{
-    margin-top: 20px;
-    color: #AA8A8A;
+input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.input-search {
+  background-color: #282c34;
+  border: none;
+  border-bottom: 2px solid #aa8a8a;
+  transition: 150ms all ease;
+}
+
+.input-search:focus::placeholder{
+    color: black;
+}
+
+.input-search:focus {
+    background-color: #aa8a8a;
+}
+
+.input-submit {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid #aa8a8a;
+  color: #aa8a8a;
+  background-color: #282c34;
+  transition: 200ms all ease;
+}
+
+.input-submit:hover {
+  background-color: #aa8a8a;
+  color: black;
+  border-radius: 10px;
+}
+
+.error {
+  margin-top: 20px;
+  color: #aa8a8a;
 }
