@@ -40,7 +40,6 @@ export default function Dictionary() {
         <input
         className="input-search"
           type="search"
-          autoFocus={true}
           value={searchWord}
           placeholder="What are you looking for?"
           onChange={(event) => {
