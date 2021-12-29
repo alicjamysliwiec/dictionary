@@ -1,6 +1,7 @@
 import logo from "./images/logo.png";
 import "./App.css";
 import Dictionary from "./Dictionary.js";
+import React from "react";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
             className="coded-by-link"
             href="https://www.linkedin.com/in/alicja-my%C5%9Bliwiec-b8b160201/"
             target="_blank"
-            rel="noreferrer"
+            without
+            rel="noopener noreferrer"
           >
             Alicja Myśliwiec
           </a>

@@ -3,7 +3,7 @@ import "./Dictionary.css";
 import Results from "./Results.js";
 import axios from "axios";
 
-export default function () {
+export default function Dictionary () {
   const [searchWord, setSearchWord] = useState("");
   const [results, setResults] = useState({});
   const [dataReady, setDataReady] = useState(false);
