@@ -1,0 +1,18 @@
+.Phonetic{
+    margin: 15px 0;
+}
+
+.listen-button{
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+    margin:10px;
+    background-color: #ad8c8c;
+    border: 2px solid #ad8c8c;
+    border-radius: 10px;
+    transition: 150ms ease-in-out all;
+}
+
+.listen-button:hover{
+background-color: #282c34;
+}

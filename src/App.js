@@ -20,7 +20,6 @@ function App() {
             className="coded-by-link"
             href="https://www.linkedin.com/in/alicja-my%C5%9Bliwiec-b8b160201/"
             target="_blank"
-            without
             rel="noopener noreferrer"
           >
             Alicja Myśliwiec
