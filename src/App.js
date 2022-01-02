@@ -15,7 +15,7 @@ function App() {
           <Dictionary />
         </main>
         <footer>
-          Coded by{" "}
+          This project was coded by{" "}
           <a
             className="coded-by-link"
             href="https://www.linkedin.com/in/alicja-my%C5%9Bliwiec-b8b160201/"
@@ -23,6 +23,13 @@ function App() {
             rel="noopener noreferrer"
           >
             Alicja Myśliwiec
+          </a>
+          {" "}and is{" "}
+          <a className="coded-by-link"
+            href="https://github.com/alicjamysliwiec/dictionary"
+            target="_blank"
+            rel="noopener noreferrer">
+            open sourced on Github.
           </a>
         </footer>
       </div>
