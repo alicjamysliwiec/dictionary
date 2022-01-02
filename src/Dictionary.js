@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
 import Results from "./Results.js";
+import Photos from "./Photos.js"
 import axios from "axios";
 
 export default function Dictionary() {
@@ -10,7 +11,10 @@ export default function Dictionary() {
     const [error, setError] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
     const [errorResolution, setErrorResolution] = useState("");
+    const [photos, setPhotos] = useState(null);
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`;
+    const pexelsApiKey = "563492ad6f9170000100000124ffa11b13504e688d89e8f9b3f48b57";
+    const pexelUrl = `https://api.pexels.com/v1/search?query=${searchWord}&per_page=6`;
     const onSubmit = (event) => {
         event.preventDefault();
         setDataReady(false);
@@ -29,6 +33,10 @@ export default function Dictionary() {
                     setErrorMessage(error.response.data.message);
                     setErrorResolution(error.response.data.resolution);
                 });
+
+            axios.get(pexelUrl, { headers: { "Authorization": `Bearer ${pexelsApiKey}` } }).then((response) => {
+                setPhotos(response.data.photos)
+            })
         }
     };
 
@@ -51,7 +59,10 @@ export default function Dictionary() {
                     Oops! {errorMessage} {errorResolution}
                 </div>
             )}
-            {dataReady && <Results results={results} />}
+            {dataReady && <>
+                <Results results={results} />
+                <Photos photos={photos} />
+            </>}
         </div>
     );
 }
