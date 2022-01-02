@@ -9,6 +9,7 @@ input {
   border-bottom: 2px solid #aa8a8a;
   transition: 150ms all ease;
   color: #757575;
+  width: 210px;
 }
 
 .input-search:focus::placeholder {
