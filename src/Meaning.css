@@ -7,3 +7,17 @@
   background-color: rgba(19, 18, 18, 0.171);
   width: 85%;
 }
+
+.synonym{
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.example{
+    opacity: 0.8;
+}
+
+.definition{
+    font-size: 19px;
+    color: grey;
+}
